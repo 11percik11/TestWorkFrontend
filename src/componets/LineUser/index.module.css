@@ -1,0 +1,78 @@
+.lineUser {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.LineUser_box1,
+.LineUser_box2,
+.LineUser_box3,
+.LineUser_box4,
+.LineUser_box5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 22px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.LineUser_box5 {
+  justify-self: end;
+}
+
+.presence_true {
+  background-color: #80bb00;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.presence_false {
+  background-color: #ec5937;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.lineUser_divUpdate {
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  
+
+  .presence_false {
+    height: 35px;
+    width: 35px;
+  }
+  .presence_true {
+    height: 35px;
+    width: 35px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .LineUser_box1,
+  .LineUser_box2,
+  .LineUser_box3,
+  .LineUser_box4,
+  .LineUser_box5 {
+    font-size: 12px;
+  }
+
+  .presence_false {
+    height: 25px;
+    width: 25px;
+  }
+  .presence_true {
+    height: 25px;
+    width: 25px;
+  }
+
+}

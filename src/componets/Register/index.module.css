@@ -1,0 +1,198 @@
+.register {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.registerContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 1000px;
+  min-height: 320px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.register_svg {
+  display: flex;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+
+.register_form {
+  display: flex;
+  justify-content: center;
+}
+
+.register_form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.register_box_input1 {
+  display: flex;
+  margin: 0px 0px 0px 0px;
+  align-items: center;
+}
+.register_box_input2 {
+  display: flex;
+  margin: 10px 0px 0px 0px;
+  align-items: center;
+}
+.register_box_input3 {
+  display: flex;
+  margin: 10px 0px 0px 0px;
+  align-items: center;
+}
+.register_box_input4 {
+  display: flex;
+  margin: 10px 0px 0px 0px;
+  align-items: center;
+}
+
+.input_title {
+  font-size: 22px;
+  color: #4e3000;
+}
+
+.register_input {
+  margin: 0px 0px 0px 81px;
+  width: 300px;
+  height: 32px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.register_input2 {
+  margin: 20px 0px 0px 30px;
+  width: 300px;
+  height: 32px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  padding: 0px 10px 0px 10px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.register_select {
+  margin: 20px 0px 0px 61px;
+  width: 310px;
+  height: 32px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0px 0px 0px 10px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.register_checkbox {
+  margin: 20px 0px 0px 15px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.buttonContainer {
+  margin: 30px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.addButton {
+  background-color: #4caf50;
+  color: white;
+  height: 32px;
+  width: 190px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.closeButton {
+  background-color: #666;
+  margin: 0px 0px 0px 10px;
+  color: white;
+  height: 32px;
+  width: 190px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .registerContent {
+    max-width: 800px;
+  }
+
+  .register_box_input1,
+  .register_box_input2,
+  .register_box_input3,
+  .register_box_input4 {
+    margin: 8px 0;
+    align-items: flex-start;
+  }
+
+  .input_title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .registerContent {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .input_title {
+    font-size: 18px;
+  }
+
+  .register_input,
+  .register_input2,
+  .register_select {
+    font-size: 18px;
+    height: 30px;
+  }
+
+  .addButton,
+  .closeButton {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .registerContent {
+    padding: 10px;
+  }
+
+  .input_title {
+    font-size: 16px;
+  }
+
+  .register_input,
+  .register_input2,
+  .register_select {
+    font-size: 16px;
+    padding: 0 8px;
+    width:200px;
+  }
+
+  .addButton,
+  .closeButton {
+    width: 100%;
+  }
+}

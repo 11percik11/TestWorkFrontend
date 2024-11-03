@@ -1,0 +1,42 @@
+:root {
+    --main-color: #4E3000;
+}
+
+.main {
+    padding: 100px 60px 60px 60px;
+}
+
+.main_title {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.column5 {
+    justify-self: end;
+}
+
+.main_title_column {
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+@media (max-width: 1150px) {
+    .main {
+        padding: 330px 60px 60px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_title_column {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_title_column {
+        font-size: 10px;
+    }
+
+}
